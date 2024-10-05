@@ -19,9 +19,9 @@ $(document).ready(function() {
 
         movies.forEach(function(movie) {
             var movieItem = `
-                <div class="movie-item">
-                    <img src="https://image.tmdb.org/t/p/w500${movie.posterPath}" alt="${movie.title}">
-                    <h3>${movie.title}</h3>
+               <div class="movie-item" style="width: 170px; height: auto; margin: 5px; display: inline-block;">
+                    <img src="https://image.tmdb.org/t/p/w500${movie.posterPath}" alt="${movie.title}" style="width: 100%; height: auto;">
+                    <h3 style="color: #ffffff; text-align: center; height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${movie.title}</h3>
                 </div>
             `;
             movieListContainer.append(movieItem);
