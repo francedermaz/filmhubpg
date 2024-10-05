@@ -1,2 +1,5 @@
 # ignore 
 node_modules
+clave.keystore
+clave.keystore.old
+build.json
