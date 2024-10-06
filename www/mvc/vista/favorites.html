@@ -10,7 +10,7 @@
                 * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                     * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' https://filmhubapi.onrender.com; img-src 'self' https://image.tmdb.org;">
 
         <!-- Required meta tags-->
         <meta charset="utf-8">
@@ -39,14 +39,14 @@
                     <div id="nbbarra" class="navbar">
                         <div class="navbar-inner">
                             <img id="logo" src="../../assets/filmhub.png" alt="FilmHub" class="logo">
-                            <a href="/favorites/" id="myfavorites" class="link">Mis Favoritas</a>
+                            <a href="/favorites/" id="myfavorites" class="link" style="font-size: 24px;">Mis Favoritas</a>
                         </div>
                     </div>
 
                     <!-- Scrollable page content -->
                     <div class="page-content">
-                        <p>favoritas</p>
-                        <!-- Link to another page -->
+                        <h2>Mis Favoritas</h2>
+                        <div id="favorites-list" class="movie-list"></div>
                     </div>
                 </div>
             </div>
@@ -54,6 +54,9 @@
         <script type="text/javascript" src="../../cordova.js"></script>
         <script type="text/javascript" src="../../lib/framework7/js/framework7.min.js"></script>
         <script type="text/javascript" src="../../js/my-app.js"></script>
+        <script type="text/javascript" src="../modelo/dto/movieDTO.js"></script>
+        <script type="text/javascript" src="../modelo/dao/favoriteDAO.js"></script>
+        <script type="text/javascript" src="../modelo/negocio/favoriteService.js"></script>
         <script type="text/javascript" src="../controlador/favorites.js"></script>
     </body>
 
