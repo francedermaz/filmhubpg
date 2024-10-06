@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
     $('#add-to-favorites').click(function () {
-        detalleService.addToFavorites(movieId, function (error) {
+        favoriteService.addMovieToFavorites(movieId, function (error) {
             if (error) {
                 alert('No se pudo agregar la película a favoritas');
                 return;
