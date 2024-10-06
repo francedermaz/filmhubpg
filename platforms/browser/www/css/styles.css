@@ -13,3 +13,81 @@
 .statusbar-overlay {
     background: #000000;
 }
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.navbar .logo {
+    width: 125px;
+    height: auto;
+}
+
+.navbar .link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.toolbar {
+    background-color: #1e1e1e;
+}
+
+.toolbar .link {
+    color: #ffffff;
+}
+
+.page-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#movie-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#movie-overview,
+#movie-release-date,
+#movie-rating {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #2196f3;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+#add-to-favorites{
+    background-color: #FF7F50;
+}
+
+.bottom-buttons{
+    margin-top: 20px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

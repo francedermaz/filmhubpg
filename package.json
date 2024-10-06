@@ -6,11 +6,15 @@
     },
     "displayName": "FILM_HUB",
     "dependencies": {
-        "cordova-android": "^8.1.0"
+        "cordova-android": "^8.1.0",
+        "cordova-plugin-whitelist": "git+https://github.com/apache/cordova-plugin-whitelist.git"
     },
     "cordova": {
         "platforms": [
             "android"
-        ]
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        }
     }
 }

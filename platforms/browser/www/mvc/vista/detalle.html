@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' https://filmhubapi.onrender.com; img-src 'self' https://image.tmdb.org;">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#2196f3">
+        <title>FilmHub - Detalles</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <script type="text/javascript" src="../../jquery/jquery-2.2.3.min.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="statusbar"></div>
+            <div class="view view-main">
+                <div data-name="detail" class="page">
+                    <div id="nbbarra" class="navbar">
+                        <div class="navbar-inner">
+                            <img id="logo" src="../../assets/filmhub.png" alt="FilmHub" class="logo">
+                            <a href="/favorites/" id="myfavorites" class="link" style="font-size: 24px;">Mis Favoritas</a>
+                        </div>
+                    </div>
+
+                    <div class="page-content">
+                        <img id="movie-poster" src="" alt="Poster" style="width: 100%; max-width: 250px;">
+                        <h1 id="movie-title"></h1>
+                        <p id="movie-overview"></p>
+                        <p id="movie-release-date"></p>
+                        <p id="movie-rating"></p>
+
+                        <div class="bottom-buttons">
+                            <button id="add-to-favorites" style="display: none;">Agregar a Favoritas</button>
+                            <button id="go-back" style="margin-top: 20px;">Volver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../cordova.js"></script>
+        <script type="text/javascript" src="../../lib/framework7/js/framework7.min.js"></script>
+        <script type="text/javascript" src="../../js/my-app.js"></script>
+        <script type="text/javascript" src="../modelo/dto/movieDTO.js"></script>
+        <script type="text/javascript" src="../modelo/dao/favoriteDAO.js"></script>
+        <script type="text/javascript" src="../modelo/negocio/favoriteService.js"></script>
+        <script type="text/javascript" src="../modelo/dao/detalleDAO.js"></script>
+        <script type="text/javascript" src="../modelo/negocio/detalleService.js"></script>
+        <script type="text/javascript" src="../controlador/navigation.js"></script>
+        <script type="text/javascript" src="../controlador/detalle.js"></script>
+    </body>
+</html>
