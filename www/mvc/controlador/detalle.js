@@ -1,12 +1,3 @@
-$('#logo').click(goHome);
-function goHome() {
-    window.location.href = '../vista/principal.html';
-}
-
-$('#go-back').click(function () {
-    window.location.href = '../vista/principal.html';
-});
-
 $(document).ready(function () {
     var urlParams = new URLSearchParams(window.location.search);
     var movieId = urlParams.get('id');
