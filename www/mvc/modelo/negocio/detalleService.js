@@ -13,7 +13,7 @@ var detalleService = {
                 data.release_date,
                 data.vote_average,
                 data.poster_path,
-                true
+                data.isFavorite
             );
 
             callback(null, movie);

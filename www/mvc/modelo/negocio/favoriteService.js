@@ -14,7 +14,7 @@ var favoriteService = {
                     favoriteData.release_date,
                     favoriteData.vote_average,
                     favoriteData.poster_path,
-                    false
+                    favoriteData.isFavorite
                 );
             });
 

@@ -3,6 +3,10 @@ function goHome() {
     window.location.href = '../vista/principal.html';
 }
 
+$('#go-back').click(function () {
+    window.location.href = '../vista/principal.html';
+});
+
 $(document).ready(function () {
     var urlParams = new URLSearchParams(window.location.search);
     var movieId = urlParams.get('id');
@@ -19,8 +23,23 @@ $(document).ready(function () {
             $('#movie-release-date').text(`Fecha de lanzamiento: ${movie.releaseDate}`);
             $('#movie-rating').text(`Puntuación: ${movie.voteAverage}`);
             $('#movie-poster').attr('src', `https://image.tmdb.org/t/p/w500${movie.posterPath}`);
+
+            if (!movie.isFavorite) {
+                $('#add-to-favorites').show();
+            }
         });
     } else {
         alert('ID de película no encontrado');
     }
+
+    $('#add-to-favorites').click(function () {
+        detalleService.addToFavorites(movieId, function (error) {
+            if (error) {
+                alert('No se pudo agregar la película a favoritas');
+                return;
+            }
+            alert('Película agregada a favoritas');
+            $('#add-to-favorites').hide();
+        });
+    });
 });
