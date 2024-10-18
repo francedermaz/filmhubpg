@@ -13,8 +13,10 @@ FilmHub es una aplicación desarrollada utilizando phonegap para la carrera DSW 
 
 ## Capturas de Pantalla
 
-<div style="display: flex;">
-<img src="https://i.ibb.co/V2qJb0V/Captura-de-pantalla-2024-10-06-172119.png" alt="Pantalla Principal" width="200"/>
-<img src="https://i.ibb.co/ySBSXd3/Captura-de-pantalla-2024-10-06-172132.png" alt="Detalles de la Película" width="200"/>
-<img src="https://i.ibb.co/Dk71W64/Captura-de-pantalla-2024-10-06-172107.png" alt="Favoritas" width="200"/>
+<div style="display: flex; justify-content: center;">
+  <img src="https://i.ibb.co/V2qJb0V/Captura-de-pantalla-2024-10-06-172119.png" alt="Pantalla Principal" width="200"/>
+  <img src="https://i.ibb.co/ySBSXd3/Captura-de-pantalla-2024-10-06-172132.png" alt="Detalles de la Película" width="200"/>
+  <img src="https://i.ibb.co/Dk71W64/Captura-de-pantalla-2024-10-06-172107.png" alt="Favoritas" width="200"/>
 </div>
+<img src="https://i.ibb.co/ZxNv1Nx/gap.png" alt="PC" width="500"/>
+
